@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs host="localhost" port="8080" app="/app">
+	<robot prefix="robot" start="1" end="10" schedule="loop" admin="true" />
+	<job name="job1" path="job1-path" times="23" method="GET">
+		<parser>kr.hayarobee.httptest.robot.job.http.ResponseParser</parser>
+		<tester>kr.hayarobee.httptest.robot.tester.SimpleResultTester</tester>
+	</job>
+</jobs>
