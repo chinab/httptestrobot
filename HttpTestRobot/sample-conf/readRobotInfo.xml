@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs host="localhost" port="8080" app="/app">
+	<robot prefix="robot" start="1" end="10" schedule="loop" admin="true" />
+</jobs>

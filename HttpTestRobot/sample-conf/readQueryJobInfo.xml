@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs host="localhost" port="8080" app="/app">
+	<robot prefix="robot" start="1" end="10" schedule="loop" admin="true" />
+	<job name="job1" path="/job1-path" times="23" method="GET">
+		<query>
+			<item key="key1" value="value1" />
+			<item key="key2" value="$ADMIN$" />
+		</query>
+	</job>
+	<job name="job2" path="/job2-path" time="7" method="GET">
+		<query>
+			<item key="key1" value="value1">
+				<others value="value2" />
+				<others value="value3" />
+				<others value="value4" />
+			</item>
+			<pair>
+				<item key="key21" value="value21">
+					<others value="value22" />
+					<others value="value23" />
+				</item>
+				<item key="key31" value="value31">
+					<others value="value32" />
+					<others value="value33" />
+				</item>
+			</pair>
+		</query>
+	</job>
+</jobs>
